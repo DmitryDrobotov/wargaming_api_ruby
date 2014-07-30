@@ -1,0 +1,2 @@
+module WargamingApi
+end
