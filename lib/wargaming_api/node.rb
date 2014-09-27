@@ -40,9 +40,7 @@ class WargamingApi::Node
   end
 
   def initialize_as_hash(hash)
-    if hash.keys.any? { |key| key =~ /[A-Z\d]+/ && hash[key].is_a?(Hash) }
-      initialize_as_array(hash.values)
-    elsif hash.keys.any? { |key| key =~ /[A-Z\d]+/ && hash[key].is_a?(Array) }
+    if hash.keys.any? { |key| key =~ /[A-Z\d]+/ && (hash[key].is_a?(Hash) || hash[key].is_a?(Array) || hash[key].is_a?(NilClass)) }
       initialize_as_array(hash.values)
     else
       initialize_attributes(hash)
@@ -50,7 +48,7 @@ class WargamingApi::Node
   end
 
   def define_array(array)
-    array.map { |hash| WargamingApi::Node.new(hash) }
+    array.map { |hash| hash ? WargamingApi::Node.new(hash) : nil }
   end
 
   def initialize_attributes(hash)
