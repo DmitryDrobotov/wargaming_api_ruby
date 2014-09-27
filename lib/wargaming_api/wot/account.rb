@@ -1,17 +1,7 @@
 class WargamingApi::Wot::Account
-  def self.list
-    
-  end
-
-  def self.info
-    
-  end
-
-  def self.tanks
-    
-  end
-
-  def self.achievements
-    
-  end
 end
+
+require 'wargaming_api/wot/account/achievements'
+require 'wargaming_api/wot/account/info'
+require 'wargaming_api/wot/account/list'
+require 'wargaming_api/wot/account/tanks'

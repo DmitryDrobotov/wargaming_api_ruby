@@ -1,4 +1,4 @@
-class WargamingApi::Wot::Account
+class WargamingApi::Wot::Clan
   class Info < WargamingApi::Base
   end
 end
