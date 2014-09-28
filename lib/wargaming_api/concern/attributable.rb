@@ -18,7 +18,7 @@ module WargamingApi::Concern::Attributable
 
     case self._attributes[name.to_sym]
     when :datetime
-      value > 0 ? Time.utc.at(value) : nil
+      Time.at(value)
     else
       value
     end
