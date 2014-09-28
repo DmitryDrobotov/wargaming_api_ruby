@@ -14,6 +14,8 @@ module WargamingApi::Concern::Attributable
   end
 
   def apply_type(name, value)
+    return value if value.nil?
+
     case self._attributes[name.to_sym]
     when :datetime then Time.utc.at(value)
     else
