@@ -20,10 +20,10 @@ Or install it yourself as:
 
 Add to your initializer:
 
-    $ WargamingApi.setup do |config|
-    $   config.application_id = 'application-id-from-wargaming.net/developers'
-    $   config.language = 'ru'
-    $ end
+    WargamingApi.setup do |config|
+      config.application_id = 'application-id-from-wargaming.net/developers'
+      config.language = 'ru'
+    end
 
 ## Usage
 
