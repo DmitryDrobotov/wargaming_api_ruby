@@ -16,6 +16,15 @@ Or install it yourself as:
 
     $ gem install wargaming_api_ruby
 
+## Configuring
+
+Add to your initializer:
+
+    $ WargamingApi.setup do |config|
+    $   config.application_id = 'application-id-from-wargaming.net/developers'
+    $   config.language = 'ru'
+    $ end
+
 ## Usage
 
     $ info = WargamingApi::Wot::Account::Info.fetch(account_id: 123)
