@@ -1,0 +1,2 @@
+module WargamingApi::Wows
+end

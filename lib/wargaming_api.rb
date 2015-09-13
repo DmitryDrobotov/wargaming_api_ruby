@@ -21,4 +21,11 @@ require 'wargaming_api/util'
 require 'wargaming_api/node'
 
 require 'wargaming_api/base'
+
 require 'wargaming_api/wot'
+require 'wargaming_api/wotb'
+require 'wargaming_api/wowp'
+require 'wargaming_api/wows'
+require 'wargaming_api/wgn'
+
+require 'wargaming_api/class_definer'

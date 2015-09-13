@@ -1,0 +1,2 @@
+module WargamingApi::Wgn
+end

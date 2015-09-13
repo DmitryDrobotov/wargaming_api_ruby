@@ -1,0 +1,2 @@
+module WargamingApi::Wotb
+end
