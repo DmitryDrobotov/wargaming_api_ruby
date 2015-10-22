@@ -32,9 +32,6 @@ Add to your initializer:
     $ user_info.statistics.all.battles # => 14999
     $ user_info.global_rating # => 8628
     
-    $ member_info = WargamingApi::Wgn::Clans::Membersinfo.fetch(account_id: 16467530).first
-    $ member_info.clan.clan_id # => nil
-
 ## Contributing
 
 1. Fork it ( https://github.com/DmitryDrobotov/wargaming_api_ruby/fork )
