@@ -27,8 +27,13 @@ Add to your initializer:
 
 ## Usage
 
-    $ info = WargamingApi::Wot::Account::Info.fetch(account_id: 123)
-    $ info.first.nickname # => "bla-bla-bla"
+    $ user_info = WargamingApi::Wot::Account::Info.fetch(account_id: 16467530).first
+    $ user_info.nickname # => 'externix'
+    $ user_info.statistics.all.battles # => 14999
+    $ user_info.global_rating # => 8628
+    
+    $ member_info = WargamingApi::Wgn::Clans::Membersinfo.fetch(account_id: 16467530).first
+    $ member_info.clan.clan_id # => nil
 
 ## Contributing
 
